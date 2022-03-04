@@ -46,6 +46,6 @@ COPY --from=build-npm /opt/app/package.json ./package.json
 
 USER twilio
 
-EXPOSE 8000
+EXPOSE 5050 5070 5080
 
 CMD [ "npm", "run", "start:prod" ]
